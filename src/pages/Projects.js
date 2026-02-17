@@ -18,6 +18,7 @@ const Projects = () => {
             tech={project.tech}
             github={project.github}
             demo={project.demo}
+            image={project.image}
           />
         ))}
       </div>
