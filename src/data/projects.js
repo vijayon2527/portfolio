@@ -18,7 +18,7 @@ const projects = [
     description:
       "A role-based web application built with React frontend and Django backend APIs, storing data in MySQL.",
     tech: ["React.js", "Django", "MySQL"],
-    github: "https://github.com/yourusername/cream",
+    github: "https://github.com/vijayon2527/cream.git",
     demo: "",
     // image: creamImage,
   },

@@ -13,33 +13,41 @@ const Home = () => {
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
 
-        {/* LEFT SIDE - TEXT */}
-        <div className="text-center md:text-left">
+       <div className="text-center md:text-left">
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-  Hi, I'm Vijay Kumar
-  <br />
-  <span className="text-blue-500">
-    <TypeAnimation
-      sequence={[
-        "Full Stack Developer",
-        2000,
-        "React Developer",
-        2000,
-        "Django Developer",
-        2000,
-      ]}
-      wrapper="span"
-      speed={50}
-      repeat={Infinity}
-    />
-  </span>
-</h1>
+          {/* Professional Tagline */}
+          <p className="text-sm uppercase tracking-widest text-gray-500 mb-4">
+            Full Stack Web Developer
+          </p>
 
+          {/* Main Heading */}
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            Gajjala Vijay Kumar
+          </h1>
 
-          <p className="text-gray-600 dark:text-gray-400 text-lg mb-6">
-            Full Stack Developer specializing in React.js & Django REST API.
-            I build scalable web applications with clean UI and strong backend architecture.
+          {/* Animated Role */}
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">
+            <TypeAnimation
+              sequence={[
+                "Python Full Stack Developer",
+                2000,
+                "React.js & Django Specialist",
+                2000,
+                "REST API & Web Application Developer",
+                2000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
+          </h2>
+
+          {/* Description */}
+         <p className="text-gray-600 text-lg mb-8 leading-relaxed max-w-lg">
+            Python Full Stack Developer specializing in building scalable web 
+            applications using Django, Django REST Framework, and React.js. 
+            Strong experience in backend development, REST API design, 
+            authentication systems, and modern frontend architecture.
           </p>
 
           {/* Buttons */}
@@ -48,7 +56,7 @@ const Home = () => {
             <a
               href={Resume}
               download="Vijay_Kumar_Resume.pdf"
-              className="flex items-center gap-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-6 py-3 rounded-lg font-semibold hover:scale-105 transition duration-300"
+              className="flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition duration-300"
             >
               <FaDownload />
               Download Resume
@@ -56,21 +64,20 @@ const Home = () => {
 
             <Link
               to="/projects"
-              className="border border-gray-900 dark:border-white px-6 py-3 rounded-lg hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-gray-900 transition"
+              className="border border-gray-900 px-6 py-3 rounded-md font-medium hover:bg-gray-900 hover:text-white transition duration-300"
             >
               View Projects
             </Link>
 
           </div>
 
-          {/* Social Icons */}
-          <div className="flex md:justify-start justify-center gap-6 text-2xl">
-
+          {/* Social Links */}
+          <div className="flex md:justify-start justify-center gap-6 text-xl text-gray-700">
             <a
               href="https://github.com/vijayon2527"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-gray-500 dark:hover:text-gray-400 transition duration-300"
+              className="hover:text-black transition duration-300"
             >
               <FaGithub />
             </a>
@@ -79,12 +86,12 @@ const Home = () => {
               href="https://www.linkedin.com/in/gajjala-vijay-8b5a52321/"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-blue-500 transition duration-300"
+              className="hover:text-blue-700 transition duration-300"
             >
               <FaLinkedin />
             </a>
-
           </div>
+
         </div>
 
         {/* RIGHT SIDE - IMAGE */}

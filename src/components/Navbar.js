@@ -9,13 +9,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { path: "/", name: "Home" },
-    { path: "/about", name: "About" },
-    { path: "/projects", name: "Projects" },
-    { path: "/contact", name: "Contact" },
-    { path: "/skills", name: "Skills" },
-
-  ];
+  { path: "/", name: "Home" },
+  { path: "/about", name: "About" },
+  { path: "/skills", name: "Skills" },
+  { path: "/projects", name: "Projects" },
+  { path: "/contact", name: "Contact" },
+];
 
   return (
     <nav className="fixed w-full top-0 bg-gray-900 border-b border-gray-800 z-50">
