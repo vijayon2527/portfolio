@@ -28,53 +28,53 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gray-900 text-white px-6 py-20">
+    <section className="min-h-screen bg-white text-gray-800 px-6 py-20">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">
+        
+        <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
           Contact Me
         </h2>
 
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="bg-gray-800 p-8 rounded-xl shadow-lg space-y-6"
+          className="bg-gray-100 p-8 rounded-2xl shadow-lg space-y-6"
         >
           <input
             type="text"
-            name="name"   // matches {{name}}
+            name="name"
             placeholder="Your Name"
             required
-            className="w-full p-3 rounded-md bg-gray-700 outline-none"
+            className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black"
           />
 
           <input
             type="email"
-            name="email"  // matches {{email}}
+            name="email"
             placeholder="Your Email"
             required
-            className="w-full p-3 rounded-md bg-gray-700 outline-none"
+            className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black"
           />
 
-          {/* 🔥 REQUIRED because template uses {{title}} */}
           <input
             type="text"
-            name="title"   // matches {{title}}
+            name="title"
             placeholder="Subject"
             required
-            className="w-full p-3 rounded-md bg-gray-700 outline-none"
+            className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black"
           />
 
           <textarea
-            name="message"  // matches {{message}}
+            name="message"
             placeholder="Your Message"
             rows="5"
             required
-            className="w-full p-3 rounded-md bg-gray-700 outline-none"
+            className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black"
           ></textarea>
 
           <button
             type="submit"
-            className="w-full bg-white text-black py-3 rounded-md font-semibold hover:opacity-90"
+            className="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-gray-800 transition duration-300"
           >
             Send Message
           </button>

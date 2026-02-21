@@ -1,5 +1,5 @@
-import lmsImage from "../assets/lms.jpg";
-import creamImage from "../assets/lms.jpg"; // you can change later
+// import lmsImage from "../assets/lms.jpg";
+// import creamImage from "../assets/lms.jpg"; // you can change later
 
 const projects = [
   {
@@ -10,7 +10,7 @@ const projects = [
     tech: ["React.js", "Django REST API", "MySQL", "JavaScript"],
     github: "https://github.com/vijayon2527/agplms.git",
     demo: "",
-    image: lmsImage,
+    // image: lmsImage,
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const projects = [
     tech: ["React.js", "Django", "MySQL"],
     github: "https://github.com/yourusername/cream",
     demo: "",
-    image: creamImage,
+    // image: creamImage,
   },
 ];
 
